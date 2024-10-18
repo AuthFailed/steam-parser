@@ -65,7 +65,7 @@ const GameSearch = () => {
 					return;
 				}
 
-				const response = await fetch('/api/steam-apps');
+				const response = await fetch('/api/steamapps');
 				if (!response.ok) throw new Error('Failed to fetch app list');
 				const data = await response.json();
 				const apps = data.applist.apps.filter(app => app.name !== "");
