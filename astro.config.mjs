@@ -7,5 +7,9 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   output: "server",
   adapter: vercel(),
+  site: "https://steam-parser.vercel.app",
+  base: "/",
+
+
   integrations: [react(), tailwind()],
 });
